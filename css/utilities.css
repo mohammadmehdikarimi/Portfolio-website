@@ -10,6 +10,7 @@
     justify-content: space-between;
 }
 
+/* Navbar */
 .btn {
     padding: 0.8rem 3rem;
     font-size: 1rem;
@@ -31,3 +32,26 @@
     border-color: var(--primary);
     color: var(--primary);
 }
+
+/* End Navbar */
+/*  Hero */
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--pure);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* End Hero */
