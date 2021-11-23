@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     --webkit-font-smotthing: antialiase;
 }
-/* Navbar styles */
+/* Navbar */
 header {
     background: var(--dark);
     height: 800px;
@@ -49,4 +49,4 @@ header nav {
 header nav .branding {
     margin-right: 3rem;
 }
-/* End Navbar styles */
+/* End Navbar */
