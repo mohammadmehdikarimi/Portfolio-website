@@ -1,1 +1,9 @@
-console.log('Hello World!');
+// reviews section slider function
+$(document).ready(function() {
+    $('.slider').slick({
+        arrows:false,
+        dots:true,
+        appendDots:'.slider-dots',
+        dotsClass:'dots'
+    });
+});
