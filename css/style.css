@@ -402,7 +402,7 @@ section.blog .card-wrapper .card {
     background: var(--pure);
 }
 
-section.blog .card-wrapper .card .img-wrapper img{
+section.blog .card-wrapper .card .img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -414,17 +414,17 @@ section.blog .card-wrapper .card .card-content {
     padding-right: 2rem;
 }
 
-section.blog .card-wrapper .card .card-content h1{
+section.blog .card-wrapper .card .card-content h1 {
     font-size: 1rem;
     font-weight: 600;
 }
 
-section.blog .card-wrapper .card .card-content a{
+section.blog .card-wrapper .card .card-content a {
     color: var(--secondary);
     text-decoration: none;
 }
 
-section.blog .card-wrapper .card .card-content a:hover{
+section.blog .card-wrapper .card .card-content a:hover {
     color: var(--primary);
 }
 
@@ -433,7 +433,7 @@ section.blog .card-wrapper .card .card-content span {
     font-size: 0.8rem;
 }
 
-section.blog .card-wrapper .card .card-content p{
+section.blog .card-wrapper .card .card-content p {
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
     margin-top: 1rem;
@@ -443,12 +443,13 @@ section.blog .card-wrapper .card .card-content p{
 section.blog .card-wrapper .card .card-content a.read-more {
     font-size: 0.8rem;
 }
+
 /* End Blog section */
 
 /* Contact section */
 section.contact .card-wrapper {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
 }
 
@@ -490,7 +491,7 @@ section.contact .input-wrap-2 input {
     font-size: 0.9rem;
 }
 
-section.contact input{
+section.contact input {
     padding: .5rem;
     border: 1px solid var(--light);
     font-size: 0.9rem;
@@ -502,7 +503,8 @@ section.contact .input-wrap-2 textarea {
     font-size: 0.9rem;
 }
 
-section.contact .input-wrap-2 textarea, section.contact input:focus {
+section.contact .input-wrap-2 textarea,
+section.contact input:focus {
     outline: none;
 }
 
@@ -510,6 +512,7 @@ section.contact .btn-wrapper {
     text-align: center;
     margin-top: 2rem;
 }
+
 /* End Contact section */
 
 /* Footer */
@@ -519,12 +522,12 @@ footer {
     padding: 5rem 0;
 }
 
-footer .footer-logo{
+footer .footer-logo {
     margin-bottom: 3rem;
     width: 150px;
 }
 
-footer .footer-socials a{
+footer .footer-socials a {
     margin-right: 1rem;
 }
 
@@ -539,6 +542,7 @@ footer .copyright {
 
 /* End Footer */
 
+/* Hamberger */
 .site-main-wrapper {
     position: relative;
 }
@@ -564,13 +568,20 @@ footer .copyright {
     top: 0;
     left: 0;
     z-index: 1001;
-    background: var(--light);
+    background: var(--dark);
     width: 100%;
     height: 100%;
+    text-align: center;
     padding: 2rem;
-    padding-top: 5rem;
+    padding-top: 6rem;
     transform: translateX(-100%);
     transition: all .5s ease-in-out;
+}
+
+.mobile-nav ul li {
+    margin-bottom: 2.5rem;
+    padding: .5rem;
+    background: repeating-linear-gradient(45deg, black, transparent 100px);
 }
 
 .open {
@@ -588,7 +599,7 @@ footer .copyright {
 }
 
 .times img {
-    width: 30px;
+    width: 40px;
 }
 
 .mobile-nav ul {
@@ -596,10 +607,13 @@ footer .copyright {
 }
 
 .mobile-nav ul li a {
-    color: var(--secondary);
+    color: var(--light);
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
     font-size: 2rem;
 }
+
+/* End Hamberger */
 
 /* Responsive */
 @media (max-width:1024px) {
@@ -611,19 +625,21 @@ footer .copyright {
         display: block;
     }
 
-     .hero .left img {
+    .hero .left img {
         width: 260px;
     }
 
     .hero .right h1 {
         font-size: 2.5rem;
     }
+
     .hero {
         padding-top: 10rem;
     }
+
     header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 91%, 0 100%);
-    } 
+    }
 
     section.about .about-me-img {
         height: 360px;
@@ -653,7 +669,7 @@ footer .copyright {
 
     header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
-    } 
+    }
 
     .hero .right h6 {
         font-size: .95rem;
@@ -667,17 +683,17 @@ footer .copyright {
         position: absolute;
         top: 260px;
         padding: 0 1rem;
-        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
     }
 
     .hero .left {
-        margin-top:-5rem;
+        margin-top: -5rem;
         margin-right: -9rem;
         padding-bottom: 4rem;
     }
 
     .about-inner-wrap {
-        flex-direction: column;    
+        flex-direction: column;
     }
 
     .about .right {
@@ -688,7 +704,7 @@ footer .copyright {
     .about .right .social {
         justify-content: center;
     }
-    
+
     section {
         padding: 3rem 0;
     }
@@ -701,11 +717,12 @@ footer .copyright {
     section.freelancer h1 {
         line-height: 1.2;
     }
+
     section.freelancer {
         padding-bottom: 8rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
     }
-    
+
     .section-heading+p {
         margin-bottom: 3rem;
     }
@@ -715,7 +732,7 @@ footer .copyright {
     }
 
     section.work .card-wrapper {
-       grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     section.contact .card-wrapper {
